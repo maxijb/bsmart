@@ -35,6 +35,9 @@
   "browserify": {
     "transform": [
       "browserify-shim"
-    ]
+    ],
+    "options": {
+      "debug": false
+    }
   }
 }

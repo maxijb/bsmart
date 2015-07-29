@@ -179,7 +179,6 @@ module.exports = function (grunt) {
   grunt.loadTasks(depsPath + '/grunt-contrib-uglify/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-cssmin/tasks');
   grunt.loadTasks(depsPath + '/grunt-contrib-less/tasks');
-  grunt.loadTasks(depsPath + '/grunt-contrib-coffee/tasks');
   grunt.loadNpmTasks('grunt-contrib-jade');
   grunt.loadNpmTasks('grunt-string-replace');
   grunt.loadNpmTasks('grunt-react');
@@ -349,29 +348,7 @@ module.exports = function (grunt) {
       }
     },
     
-    coffee: {
-      dev: {
-        options:{
-          bare:true
-        },
-        files: [
-          {
-            expand: true,
-            cwd: 'assets/js/',
-            src: ['**/*.coffee'],
-            dest: '.tmp/public/js/',
-            ext: '.js'
-          }, {
-            expand: true,
-            cwd: 'assets/linker/js/',
-            src: ['**/*.coffee'],
-            dest: '.tmp/public/linker/js/',
-            ext: '.js'
-          }
-        ]
-      }
-    },
-
+    
     concat: {
       js: {
         src: jsFilesToInject(),
@@ -589,23 +566,9 @@ module.exports = function (grunt) {
           '.tmp/public/linker/js/actions/dashboard.js': [ '.tmp/public/js/browserify/dashboard/**/*.js'],
           '.tmp/public/linker/js/actions/account.js': [ '.tmp/public/js/browserify/account/**/*.js'],
           '.tmp/public/linker/js/actions/extension.js': [ '.tmp/public/js/browserify/extension/**/*.js'],
+          '.tmp/public/linker/js/actions/main.js': [ '.tmp/public/js/browserify/main/**/*.js']
 
-        },
-        options: {
-          browserifyOptions: {
-                        debug: true,
-                        transform: ['reactify'],
-                        extensions: ['.jsx']
-                    }
         }
-      },
-
-      main: {
-        files: {
-
-          '.tmp/public/linker/js/actions/main.js': [ '.tmp/public/js/browserify/main/**/*.js'],
-        }
-
       }
     },
 
@@ -647,8 +610,6 @@ module.exports = function (grunt) {
     'copy:dev',    
     'react:dynamic_mappings',
     'browserify:dist',
-    'browserify:main',
-    'coffee:dev',
     'jade:compile',
     'jade:viewsCompile'
   ]);
@@ -676,13 +637,14 @@ module.exports = function (grunt) {
     'copy:build'
   ]);
 
+  ////TODO: all the concat is wrong... ////
+
   // When sails is lifted in production
   grunt.registerTask('prod', [
     'clean:dev',
     'jst:dev',
     'less:prod',
     'copy:build',
-    'coffee:dev',
     'jade:prodCompile',
     'jade:prodViewsCompile',
     'react:dynamic_mappings',
