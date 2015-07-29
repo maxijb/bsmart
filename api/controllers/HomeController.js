@@ -46,15 +46,10 @@ module.exports = {
 		if (!req.W.user) {
 			res.redirect('/');
 		} else {
-			console.log('sisi');
 			req.W.request.action = 'dashboard';
-
-
-
 
 			Tag.find({user_id: req.W.user.id})
 				.then(function(tags) {
-					console.log('noneon');
 					res.view({W: req.W, 
 							  data: {tags: tags},
 							  loginComponent: helpers.reactRender(loginComponent, {user: req.W.user}), 
