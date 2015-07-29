@@ -1,0 +1,15 @@
+footer {
+  background: #336699;
+  padding: 20px;
+  color: white;
+  overflow: hidden;
+}
+footer ul.menu {
+  float: left;
+}
+footer ul.menu li.logo-item {
+  display: none;
+}
+footer > .logo {
+  float: right;
+}

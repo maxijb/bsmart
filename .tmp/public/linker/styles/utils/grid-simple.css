@@ -1,0 +1,131 @@
+/* Generates grid columns from 1 to 12
+*  Not usable in IE7 (.htc required) because of box-sizing: border-box
+*/
+.grid {
+  margin: 0;
+  *zoom: 1;
+}
+.grid:before,
+.grid:after {
+  content: "";
+  display: table;
+}
+.grid:after {
+  clear: both;
+}
+.grid .column-1 {
+  width: 8.33333333%;
+}
+.grid .column-2 {
+  width: 16.66666667%;
+}
+.grid .column-3 {
+  width: 25%;
+}
+.grid .column-4 {
+  width: 33.33333333%;
+}
+.grid .column-5 {
+  width: 41.66666667%;
+}
+.grid .column-6 {
+  width: 50%;
+}
+.grid .column-7 {
+  width: 58.33333333%;
+}
+.grid .column-8 {
+  width: 66.66666667%;
+}
+.grid .column-9 {
+  width: 75%;
+}
+.grid .column-10 {
+  width: 83.33333333%;
+}
+.grid .column-11 {
+  width: 91.66666667%;
+}
+.grid .column-12 {
+  width: 100%;
+}
+.grid .pull-1 {
+  margin-rigth: 8.33333333%;
+}
+.grid .pull-2 {
+  margin-rigth: 16.66666667%;
+}
+.grid .pull-3 {
+  margin-rigth: 25%;
+}
+.grid .pull-4 {
+  margin-rigth: 33.33333333%;
+}
+.grid .pull-5 {
+  margin-rigth: 41.66666667%;
+}
+.grid .pull-6 {
+  margin-rigth: 50%;
+}
+.grid .pull-7 {
+  margin-rigth: 58.33333333%;
+}
+.grid .pull-8 {
+  margin-rigth: 66.66666667%;
+}
+.grid .pull-9 {
+  margin-rigth: 75%;
+}
+.grid .pull-10 {
+  margin-rigth: 83.33333333%;
+}
+.grid .pull-11 {
+  margin-rigth: 91.66666667%;
+}
+.grid .pull-12 {
+  margin-rigth: 100%;
+}
+.grid .push-1 {
+  margin-left: 8.33333333%;
+}
+.grid .push-2 {
+  margin-left: 16.66666667%;
+}
+.grid .push-3 {
+  margin-left: 25%;
+}
+.grid .push-4 {
+  margin-left: 33.33333333%;
+}
+.grid .push-5 {
+  margin-left: 41.66666667%;
+}
+.grid .push-6 {
+  margin-left: 50%;
+}
+.grid .push-7 {
+  margin-left: 58.33333333%;
+}
+.grid .push-8 {
+  margin-left: 66.66666667%;
+}
+.grid .push-9 {
+  margin-left: 75%;
+}
+.grid .push-10 {
+  margin-left: 83.33333333%;
+}
+.grid .push-11 {
+  margin-left: 91.66666667%;
+}
+.grid .push-12 {
+  margin-left: 100%;
+}
+.grid [class*='column-'] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 20px;
+  min-height: 1px;
+}

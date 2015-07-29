@@ -1,0 +1,9 @@
+#breadcrumb {
+  font-size: 0.85em;
+}
+#breadcrumb .separator {
+  margin: 7px;
+}
+#breadcrumb .separator:before {
+  content: "\00BB";
+}

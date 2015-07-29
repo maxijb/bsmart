@@ -1,0 +1,220 @@
+{
+  "Welcome": "Welcome",
+  "Regions" : "Regions",
+  "Tools" : "Tools", 
+  "Reference" : "Reference",
+  "Search" : "Search",
+  
+  	 
+
+  "TheWeatherInAllCitiesInTheWorld": "The weather in all the Cities of the World",
+  "SearchWeatherInAnotherCity": "Search another city",
+  "AverageXYInThisMonth": "<strong>%s</strong> \"average <span>%s-%s<span> %s",
+
+ 	"Month_Long_0": "January",
+	"Month_Long_1": "February",
+	"Month_Long_2": "March",
+	"Month_Long_3": "April",
+	"Month_Long_4": "May",
+	"Month_Long_5": "June",
+	"Month_Long_6": "July",
+	"Month_Long_7": "August",
+	"Month_Long_8": "September",
+	"Month_Long_9": "October",
+	"Month_Long_10": "November",
+	"Month_Long_11": "December",
+
+	"Month_Short_0": "Jan",
+	"Month_Short_1": "Feb",
+	"Month_Short_2": "Mar",
+	"Month_Short_3": "Apr",
+	"Month_Short_4": "May",
+	"Month_Short_5": "Jun",
+	"Month_Short_6": "Jul",
+	"Month_Short_7": "Aug",
+	"Month_Short_8": "Sep",
+	"Month_Short_9": "Oct",
+	"Month_Short_10": "Nov",
+	"Month_Short_11": "Dec",
+
+	"Unit_Symbol_c": "ºC",
+	"Unit_Symbol_f": "ºF",
+	"Unit_Symbol_mm": "mm",
+	"Unit_Symbol_inch": "inch",
+	"Unit_Symbol_cm": "cm",
+	"Unit_Symbol_inch": "inch",
+	"Unit_Symbol_percent": "%",
+	"Unit_Symbol_days": "days",
+	"Unit_Symbol_kph": "Km/H",
+	"Unit_Symbol_mph": "Mi/H",
+
+	"WholeYear": "Whole year",
+	"SpecificMonth": "By month",
+	"Forecasts": "Forecasts",
+	"Today": "Today",
+
+	"ClickToFindLocation": "Click on the map to find your location",
+	"Close": "Close",
+	"AverageTemperature": "Average temperature",
+	"AveragePrecipitation": "Average precipitation",
+	"TempMinMax": "%s %s <em>(min)</em> | %s %s <em>(max)</em>",
+
+
+	"seo_link_today": "Today's Weather in %s",
+	"seo_link_forecast": "Weather forecast for %s",
+	"seo_link_weather": "The weather in %s",
+	"seo_link_month": "The weather in %s, on %s",
+
+	"TheWeatherIn": "The weather in",
+	"TitleDescriptionWeather": "During the whole year",
+	"TitleDescriptionMonth": "in %s",
+	"TitleDescriptionToday": "during today",
+	"TitleDescriptionForecast": "for the next few days",
+
+	
+	"Question_N": "Does it snow in %s?",
+	"Question_N_Month": "Does it snow in %s in %s?",
+	"Question_CN": "How much does it snow in %s?",
+	"Question_CN_Month": "How much does it snow in %s in %s?",
+	"Question_CDN": "How many days does it snow in %s?",
+	"Question_CDN_Month": "How many days does it snow in %s in %s?",
+	"Question_CCN": "How often does it snow in %s?",
+	"Question_CCN_Month": "How often does it snow in %s in %s?",
+	"Question_L": "Does it rain in %s?",
+	"Question_L_Month": "Does it rain in %s in %s?",
+	"Question_CL": "How much does it rain in %s?",
+	"Question_CL_Month": "How much does it rain in %s in %s?",
+	"Question_CDL": "How many days does it rain in %s?",
+	"Question_CDL_Month": "How many days does it rain in %s in %s?",
+	"Question_CCL": "How often does it rain in %s?",
+	"Question_CCL_Month": "How often does it rain in %s in %s?",
+	"Question_SC": "Is it dry in %s?",
+	"Question_SC_Month": "Is it dry in %s in %s?",
+	"Question_T": "How warm is %s?",
+	"Question_T_Month": "How warm is %s in %s?",
+	"Question_TP": "What's the average temperature in %s?",
+	"Question_TP_Month": "What's the average temperature in %s in %s?",
+	"Question_CFMIT": "What was the coldest temperature ever recorded in %s?",
+	"Question_CFMIT_Month": "What was the coldest temperature ever recorded in %s in %s?",
+	"Question_CFMAT": "What was the warmest temperature ever recorded in %s?",
+	"Question_CFMAT_Month": "What was the warmest temperature ever recorded in %s in %s?",
+	"Question_HF": "Is it cold in %s?",
+	"Question_HF_Month": "Is it cold in %s in %s?",
+	"Question_QTF": "How could does it get in %s?",
+	"Question_QTF_Month": "How could does it get in %s in %s?",
+	"Question_HC": "Is it hot in %s?",
+	"Question_HC_Month": "Is it hot in %s in %s?",
+	"Question_QTC": "How warm does it get in %s?",
+	"Question_QTC_Month": "How warm does it get in %s in %s?",
+	"Question_H": "What's the Humidity like in %s?",
+	"Question_H_Month": "What's the Humidity like in %s in %s?",
+	"Question_CLH": "Is the weather humid in %s?",
+	"Question_CLH_Month": "Is the weather humid in %s in %s?",
+	"Question_CLS": "How much daylight in %s?",
+	"Question_H_Month": "How much daylight in in %s in %s?",
+	"Question_CLH": "How many hours of sunlight in %s?",
+	"Question_CLH_Month": "How many hours of sunlight in %s in %s?",
+	"Question_CLS": "Is it windy in %s?",
+	"Question_H_Month": "Is it windy in %s in %s?",
+	"Question_MV": "What is the windiest month in %s?",
+	"Question_MC": "What is the warmest month in %s?",
+	"Question_MF": "What is the coldest month in %s?",
+	"Question_MH": "What is the most humid month in %s?",
+	"Question_ML": "What is the most rainy month in %s?",
+	"Question_MN": "What is the snowiest month in %s?",
+
+
+
+	 "WeatherCode_SUN": "Average Daily Sunshine",
+	  "WeatherCode_DEW": "Average Dew Point",
+
+	  "WeatherCode_ATE": "Average Temperature",
+	  "WeatherCode_AHT": "Average High Temperature",
+	  "WeatherCode_ALT": "Average Low Temperature",
+	  "WeatherCode_HRT": "Highest Recorded Temperature",
+	  "WeatherCode_LRT": "Lowest Recorded Temperature",
+	  "WeatherCode_VHD": "Average Number of Days Above 90F - 32C",
+	  "WeatherCode_VCD": "Average Number of Days Below 32F - 0C",
+	  
+	  
+	  "WeatherCode_EHU": "Average Evening Relative Humidity",
+	  "WeatherCode_MHU": "Average Morning Relative Humidity",
+	  "WeatherCode_AHU": "Average Relative Humidity",
+	  
+	  "WeatherCode_APR": "Average Precipitation",
+	  "WeatherCode_DWR": "Average Number of Rainy Days",
+	  "WeatherCode_DWP": "Average Number of Days With Precipitation",
+	  "WeatherCode_LRM": "Least Rain Reported in a Month",
+	  "WeatherCode_HRM": "Most Rain Reported in a Month",
+	  
+	  "WeatherCode_ASN": "Average Snowfall",
+	  "WeatherCode_DWS": "Average Number of Days With Snow",
+	  
+	  "WeatherCode_AWS": "Average Wind Speed",
+
+
+	"ClimateType_cold" : "cold",
+	"ClimateType_temperate" : "temperate",
+	"ClimateType_warm" : "warm",
+
+
+	"PrecipitationType_tropical" : "tropical",
+	"PrecipitationType_rainy" : "rainy",
+	"PrecipitationType_desert" : "very dry",
+
+
+	"SentenceOperatorSentence" : ". ",
+	"SentenceOperatorAdjacent" : ", ",
+	"SentenceOperatorAnd" : " y ",
+	"SentenceOperatorBut" : ", pero ",
+	"SentenceOperatorHowever" : ". Sin embargo, ",
+	"SentenceOperatorOnTop" : ". Ademas, ",
+
+	"SentencesClimate1" : "el clima de %s es %s y sus precipitaciones son moderadas",
+	"SentencesClimate2" : "el clima de %s es %s y %s",
+	
+	"SentencesSeasons1" : "por su temperatura, presenta cuatro estaciones, con inviernos %s y veranos %s",
+	"SentencesSeasons2" : "la temperatura es constante todo el año, promediando unos %s %s",
+
+	"SentencesTemp1" : "la temperatura en los meses más fríos (%s) promedia los %s %s",
+	"SentencesTemp2" : "la temperatura en los meses más cálidos (%s) promedia los %s %s",
+	"SentencesTemp2" : "la temperatura en los meses más cálidos (%s) promedia los %s %s, mientras que en los fríos desciende hasta los %s %s",
+	"SentencesTemp3" : "se han llegado a registrar temperaturas mínimas de %s %s",
+	"SentencesTemp4" : "se han llegado a registrar temperaturas máximas de %s %s",
+	"SentencesTemp5" : "se han llegado a registrar temperaturas mínimas de %s %s y máximas de %s %s",
+	"SentenceTemp6" : "durante %s existe un %s % de probabilidades de encontrar un día muy frío, por debajo de los %s",
+	"SentenceTemp7" : "durante %s hay un %s % de probabilidades de que el día sea muy caluroso, superando los %s",
+	"SentenceTemp8" : "registrándose mínimas de %s %s y máximas del orden de los %s %s",
+
+
+	
+	"SentencesPrec1" : "las precipitaciones son parejas durante todo el año, promediando %s %s mensuales",
+	"SentencesPrec2" : "las precipitaciones tambien se dan estacionalizadas, marcando un claro ascenso en %s, llegando a caer %s %s por mes",
+	"SentencesPrec3" : "las precipitaciones se presentan estacionalizadas, mostrando un claro ascenso en %s, llegando a caer %s %s por mes",
+	"SentencesPrec4" : "durante %s, las precipitaciones decrecen hasta alcanzar los %s %s",
+	"SentencesPrec5" : "se han llegado a registrar precipitaciones mínimas de %s %s",
+	"SentencesPrec6" : "se han llegado a registrar precipitaciones máximas de %s %s",
+	"SentencesPrec7" : "se han llegado a registrar precipitaciones mínimas de %s %s y máximas de %s %s",
+	"SentencesPrec8" : "se considera que durante los meses más secos (%s) existe un %s % de que llueve durante el día, mientras que durante la estación más húmeda puede llegar a llover hasta %s días a lo largo del mes",
+	"SentencesPrec9" : "la cantidad de días con precipitaciones se mantienen bastante constantes a lo largo del año, promediando unos %s lluviosos por mes",
+
+	"SentenceSnow1" : "en %s, no se registran nevadas regularmente",
+	"SentenceSnow2" : "por su tipo de clima, nunca nieva en %s",
+	"SentenceSnow3" : "casi todos los meses del año nieva en %s. Solo durante %s es raro encontrarse con una nevada",
+	"SentenceSnow3" : "En general, no se registra nieve en %s, salvo durante %s ",
+	"SentenceSnow4" : "la mayor caída de nieve se presenta durante %s, llegando a %s %s",
+
+	"SentenceHumid1" : "la humedad es constante alrededor del %s %",
+	"SentenceHumid2" : "la humedad crece durante %s alcanzado el %s % y cae nuevamente durante %s, llegando a promediar un %s %",
+	"SentenceHumid3" : "por lo general, la humedad es mayor por %s, llegando a promediar un %s % que por %s",
+
+	"SentenceWind1" : "habitualmente, los vientos en %s son %s, y se mantienen regularmente alrededor de los %s %s",
+	"SentenceWind2" : "los vientos aumentan notablemente durante %s, llegando a %s %s, mientras que el promedio anual es de %s %s",
+
+	"SentenceLight1" : "la duración del dia se mantiene constante a lo largo de todo el año alrededor de las %s horas por día",
+	"SentenceLight2" : "la duración del dia varía notablemente entre estaciones, situándose durante %s alrededor de las %s horas por día, y descendiendo en %s a sólo %s horas"
+
+	
+
+		
+}
