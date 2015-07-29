@@ -24,5 +24,17 @@
   "main": "app.js",
   "repository": "",
   "author": "",
-  "license": ""
+  "license": "",
+  "devDependencies": {
+    "browserify-shim": "^3.8.10"
+  },
+  "browserify-shim": {
+    "jquery": "global:$",
+    "react": "global:React"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim"
+    ]
+  }
 }
