@@ -567,12 +567,7 @@ module.exports = function (grunt) {
     },
 
     react: {
-      single_file_output: {
-        files: {
-          '.tmp/public/linker/js/components/output.js': 'assets/components/HelloMessage.jsx'
-        }
-      },
-
+      
       dynamic_mappings: {
         files: [
           {
