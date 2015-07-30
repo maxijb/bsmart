@@ -2,7 +2,7 @@ var React = require('react');
 
 module.exports = components.AutocompleteItem = React.createClass({
   
-  highlightText: function() {
+  highlightText: function() {   
   	var search = this.props.searchText,
   		name = this.props.item.name,
   		index = name.search(new RegExp(search, 'i')),
