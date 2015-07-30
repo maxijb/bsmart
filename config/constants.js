@@ -183,21 +183,7 @@ module.exports.constants = {
 	* this var is passed by the template to helpers.exportsTranslationsToClient
 	* This can be overriden in each controller, passing the clientTexts to the view
 	*/
-	clientTranslations: ["AverageXYInThisMonth", "Welcome", "Unit_Symbol_c", "Unit_Symbol_mm", "Unit_Symbol_f",  
-						 "TempMinMax", 
-						 "WholeYear", 
-						 "SpecificMonth", 
-						 "Forecasts", 
-						 "Today", 
-						 "ClickToFindLocation", 
-						 "Close", 
-						 "AverageTemperature", 
-						 "AveragePrecipitation", 
-						 "TempMinMax", 
-						 "seo_link_today", 
-						 "seo_link_forecast", 
-						 "seo_link_weather", 
-						 "seo_link_month"]
+	clientTranslations: ["Welcome", "logOut"]
 						.concat(expandNumberedTranslations('Month_Long_'))
 						.concat(expandNumberedTranslations('Month_Short_')),
 

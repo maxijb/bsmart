@@ -3,7 +3,8 @@
 */
 
 var React = require('react'),
-	tagsContainerComponent = require('../../../components/TagsContainer');
+	TagsContainer = require('../../../components/TagsContainer');
+	BookmarkCreate = require('../../../components/BookmarkCreate');
 
 W.modules.startup.dashboard_action = (function($) {
 
@@ -11,7 +12,8 @@ W.modules.startup.dashboard_action = (function($) {
 
 		init = function() {
 
-			React.render(React.createElement(tagsContainerComponent, {tags: W.data.tags}), document.getElementById('tags-wrapper'));
+			React.render(React.createElement(TagsContainer, {tags: W.data.tags}), document.getElementById('tags-wrapper'));
+			React.render(React.createElement(BookmarkCreate, {tags: W.data.tags}), document.getElementById('new-bookmark'));
 
 
 		}

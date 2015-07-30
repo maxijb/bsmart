@@ -38,7 +38,7 @@ module.exports = {
 
 	tweets_index: function(req, res) {
 		req.W.request.action = 'tweets_index';
-		res.view({W: req.W, searchboxComponent: helpers.reactRender(searchboxComponent, {})});
+		res.view({W: req.W, searchboxComponent: reactHelpers.render(searchboxComponent, {})});
 	},
 
 	dashboard: function(req, res) {
@@ -51,8 +51,8 @@ module.exports = {
 				.then(function(tags) {
 					res.view({W: req.W, 
 							  data: {tags: tags},
-							  loginComponent: helpers.reactRender(loginComponent, {user: req.W.user}), 
-							  tagsContainer: ''//helpers.reactRender(tagsContainer, {tags: tags}) 
+							  loginComponent: reactHelpers.render(loginComponent, {user: req.W.user}, res), 
+							  tagsContainer: ''//reactHelpers.render(tagsContainer, {tags: tags}) 
 							});
 				});
 			

@@ -95,7 +95,3 @@ function expandNumberedTranslations(prefix, start, end) {
 }
 
 
-var React = require('react');
-exports.reactRender = function(component, props) {
-   return React.renderToString(React.createElement(component, props));
-}

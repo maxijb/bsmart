@@ -1,7 +1,10 @@
 var React = require('react');
+var CommonMixins = require('./CommonMixins');
+
 
 module.exports = React.createClass({
-  
+  mixins: [CommonMixins.translationMixin],
+
   componentDidMount: function() {
   	_this = this;
 
@@ -123,8 +126,8 @@ module.exports = React.createClass({
     return (
     	<div className="wrapper">
     		<div className={"status " + (!connected ? 'hidden' : "")}>{connected ? this.state.user.name : ""}</div>
-    		<div className={"button " + (connected ? 'hidden' : "")} onClick={this.login}>Log in with Facebook</div>
-    		<div className={"button " + (!connected ? 'hidden' : "")} onClick={this.logout}>Log out</div>
+    		<div className={"button " + (connected ? 'hidden' : "")} onClick={this.login}>{this.__("logInWithFacebook")}</div>
+    		<div className={"button " + (!connected ? 'hidden' : "")} onClick={this.logout}>{this.__("logOut")}</div>
     	</div>
     	);
   }
