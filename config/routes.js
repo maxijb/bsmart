@@ -63,11 +63,6 @@ module.exports.routes = {
      action: 'autocomplete'
   },
 
-  /////////////////////////// Ajax
-
-  '/ajax/city_near/:lat,:lng/:quantity?' : "AjaxController.CityNear",
-
-
 
   /////////////////////////Busquedas
   '/:language?/search/:search' : {
@@ -75,14 +70,6 @@ module.exports.routes = {
     action: 'disambiguation' 
   },
 
-
-  '/:language?/:action(city|region|zone|country)/:show(forecast|today|weather)/:id/:seo': 'SearchController.Search',
-  '/:language?/:action(city|region|zone|country)/:show(month)/:id-:month/:seo': 'SearchController.Search',
-
-
-  ////////////////////Questions
-  '/:language?/question/:show/:id-:month/:seo': 'SearchController.Question',
-  '/:language?/question/:show/:id/:seo': 'SearchController.Question'
 
   /*
   // But what if you want your home page to display

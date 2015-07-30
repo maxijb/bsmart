@@ -15,7 +15,6 @@
  * @docs        :: http://sailsjs.org/#!documentation/controllers
  */
 
-var Hello = require('../../assets/components/HelloMessage.jsx');
 var searchboxComponent = require('../../assets/components/Searchbox.jsx');
 var loginComponent = require('../../assets/components/Login.jsx');
 var tagsContainer = require('../../assets/components/TagsContainer.jsx');
@@ -33,7 +32,7 @@ module.exports = {
 			res.redirect('/dashboard');
 		}
 
-		res.view({ W: req.W, markup: helpers.reactRender(components.HelloMessage, {name: 'maxi'})});
+		res.view({ W: req.W });
 	},
 
 
@@ -53,11 +52,15 @@ module.exports = {
 					res.view({W: req.W, 
 							  data: {tags: tags},
 							  loginComponent: helpers.reactRender(loginComponent, {user: req.W.user}), 
-							  tagsContainer: helpers.reactRender(tagsContainer, {tags: tags}) 
+							  tagsContainer: ''//helpers.reactRender(tagsContainer, {tags: tags}) 
 							});
 				});
 			
 		}
+	},
+
+	vista: function(req, res) { 
+		res.view({W: req.W, layout: null});
 	},
 
 

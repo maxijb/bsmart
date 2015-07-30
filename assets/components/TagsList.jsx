@@ -5,11 +5,12 @@ module.exports = React.createClass({
   componentDidMount: function() {
   },
 
-  render: function() {
 
+  render: function() {
+    var _this = this;
   	var items = this.props.tags.map(function (item, i) {
       return (
-        <Tag tag={item} key={item.id} />
+        <Tag tag={item} key={item.id} remove={_this.props.removeTag} />
       );
     });
 

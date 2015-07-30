@@ -9,19 +9,35 @@ module.exports = React.createClass({
     };
   },
 
+  getInitialState: function() {
+    return {
+      active: null
+    }
+  },
+
+  selectColor: function(color) {
+    this.setState({active: color});
+  },
+
+  reset: function() {
+    this.setState(this.getInitialState());
+  },
+
   render: function() {
 
+    var _this = this;
 
+    var items = this.props.colors.map(function (item, i) {
 
-
-
-
-  	var items = this.props.colors.map(function (item, i) {
 	  	var style = {
 	  		"background": "#"+item
-	  	}
+	  	};
+
+      var classAttr = "color-selector-item";// + (this.state.active == item ? "active": "");
+      if (item == _this.state.active) classAttr += " active";
+
        return (
-         <div className="color-selector" data-color={item} style={style}>
+         <div className={classAttr} style={style} onClick={_this.selectColor.bind(_this, item)}>
          </div>
        );
     });
