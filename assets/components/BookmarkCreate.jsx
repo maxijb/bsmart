@@ -1,6 +1,7 @@
 var React = require('react');
 var BookmarkCreateLightbox = require('./BookmarkCreateLightbox');
-
+var _ = require('lodash');
+var pubsub = require('./Utils/PubSub');
 
 module.exports = React.createClass({
   
@@ -15,7 +16,7 @@ module.exports = React.createClass({
   },
 
   openCreateLightbox: function() {
-  	this.setState({showLightbox: true});
+  	this.setState({showLightbox: true}); 
   },
 
   closeCreateLightbox: function() {
@@ -23,18 +24,20 @@ module.exports = React.createClass({
     this.refs.lightbox.reset();
   },
 
-  create: function(name, color) {
+  create: function(bookmark) {
 
     var _this = this;
-    this.setState({loading: true});
-    
-    ///TODO: user should come from the cookie in server side
-    $.post('/resource/create', {user_id: W.user.id, name: name, color: color}, function(data) {
-        //parent create
-        _this.props.create(data);
-        _this.setState({loading: false});
-        _this.closeCreateLightbox();
-    });
+    pubsub.emit("ACTION:create-bookmark", 
+                
+                    _.extend({user_id: W.user.id}, bookmark), 
+                
+                    function() {
+                        _this.setState({loading: false});
+                        _this.closeCreateLightbox();
+                    }
+                );
+      
+   
 
   },
 

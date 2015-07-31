@@ -11,11 +11,12 @@ module.exports = {
   tableName: 'resources',
   migrate: 'safe',
   autoPK: false,
+  autoCreatedAt: false,
+  autoUpdatedAt: false,
 
   attributes: {
   	res_id: {
         type:"integer",
-        required:true,
         unique: true
     },
     name: 'STRING',

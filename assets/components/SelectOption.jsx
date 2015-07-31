@@ -25,6 +25,10 @@ module.exports = React.createClass({
     this.setState({activeId: item.id, activeName: item.name});
   },
 
+  getValue: function() {
+    return { id: this.state.activeId || 0, name: this.state.activeName || "" };
+  },
+
   render: function() {
     var _this = this;
 

@@ -51,7 +51,7 @@ module.exports = {
 				.then(function(tags) {
 					res.view({W: req.W, 
 							  data: {tags: tags},
-							  loginComponent: reactHelpers.render(loginComponent, {user: req.W.user}, res), 
+							  loginComponent: '',//reactHelpers.render(loginComponent, {user: req.W.user}, res), 
 							  tagsContainer: ''//reactHelpers.render(tagsContainer, {tags: tags}) 
 							});
 				});

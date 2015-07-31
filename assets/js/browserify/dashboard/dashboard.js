@@ -3,10 +3,12 @@
 */
 
 var React = require('react'),
-	TagsContainer = require('../../../components/TagsContainer');
-	BookmarkCreate = require('../../../components/BookmarkCreate');
+	TagsContainer = require('../../../components/TagsContainer'),
+	BookmarkCreate = require('../../../components/BookmarkCreate'),
+	//stores
+	BookmarkStore = require('../../../components/stores/BookmarkStore');
 
-W.modules.startup.dashboard_action = (function($) {
+W.modules.startup.dashboard_action = (function($) { 
 
 	
 

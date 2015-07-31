@@ -10,13 +10,15 @@ module.exports = React.createClass({
 
   getInitialState: function() {
     return {
-      url: '',
-      title: ''
+      uri: '',
+      name: ''
     }
   },
 
-  handleChange: function(event) {
-  	this.setState({value: event.target.value});
+  handleChange: function(field, event) {
+    var obj = {};
+        obj[field] = event.target.value;
+  	    this.setState(obj);
   },
 
   selectColor: function(color) {
@@ -24,12 +26,15 @@ module.exports = React.createClass({
   },
 
   confirm: function() {
-    this.props.confirm(this.state.value, this.refs.colorSelector.state.active);
+    this.props.confirm({
+      name: this.state.name, 
+      uri: this.state.uri,
+      tag_id: this.refs.tag.getValue().id
+    });
   },
 
   reset: function() {
-    this.setState({value: ""});
-    this.refs.colorSelector.reset();
+    this.setState(this.getInitialState());
   },
 
   render: function() {
@@ -40,11 +45,11 @@ module.exports = React.createClass({
     			<p className='title'>New label</p>
     			<fieldset>
     				<p>URL</p>
-            <input type="text" ref="url" onChange={this.handleChange} value={this.state.url} />
+            <input type="text" ref="uri" onChange={this.handleChange.bind(this, "uri")} value={this.state.uri} />
             <p>Title</p>
-    				<input type="text" ref="title" onChange={this.handleChange} value={this.state.title} />
+    				<input type="text" ref="name" onChange={this.handleChange.bind(this, "name")} value={this.state.name} />
             <p>Tag</p>
-            <SelectOption tags={this.props.tags} />
+            <SelectOption tags={this.props.tags} ref="tag" />
     			</fieldset>
     			<a className="button primary" onClick={this.confirm}>Create</a>
     			<a className="button" onClick={this.props.cancel}>Cancel</a>
