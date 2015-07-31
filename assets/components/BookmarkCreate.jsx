@@ -27,7 +27,9 @@ module.exports = React.createClass({
   create: function(bookmark) {
 
     var _this = this;
-    pubsub.emit("ACTION:create-bookmark", 
+
+    console.log(bookmark);
+    pubsub.emit("ACTION:bookmark-create", 
                 
                     _.extend({user_id: W.user.id}, bookmark), 
                 

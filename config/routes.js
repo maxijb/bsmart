@@ -64,11 +64,6 @@ module.exports.routes = {
   },
 
 
-  /////////////////////////Busquedas
-  '/:language?/search/:search' : {
-    controller: 'SearchController',
-    action: 'disambiguation' 
-  },
 
 
   /*

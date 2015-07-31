@@ -5,7 +5,11 @@ module.exports = React.createClass({
   },
 
   getInitialState : function() {
-    return {};
+    var props = this.props.tags && this.props.tags.length;
+    return {
+      activeName: props ? this.props.tags[0].name : "",
+      activeId: props ? this.props.tags[0].id : -1,
+    };
   },
 
   handleContentClick: function() {
@@ -26,7 +30,7 @@ module.exports = React.createClass({
   },
 
   getValue: function() {
-    return { id: this.state.activeId || 0, name: this.state.activeName || "" };
+      return { id: this.state.activeId, name: this.state.activeName };
   },
 
   render: function() {
@@ -43,15 +47,10 @@ module.exports = React.createClass({
     });
 
 
-    //Set active Variables
-    var activeId = this.state.activeId || this.props.tags[0].id || -1;
-    var activeName = this.state.activeName || this.props.tags[0].name || "Choose a tag";
-
-
   	return (
     	<div class="fancy-select">
-        <div class='fancy-select-content' data-id={activeId} onClick={this.handleContentClick}>
-          <span className="fancy-select-display">{activeName}</span>
+        <div class='fancy-select-content' data-id={this.state.activeId} onClick={this.handleContentClick}>
+          <span className="fancy-select-display">{this.state.activeName}</span>
         </div>
         <ul className={"fancy-select-list" + (this.state.showList ? " visible" : "")}>
         	{items}

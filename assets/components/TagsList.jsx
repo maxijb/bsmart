@@ -10,7 +10,7 @@ module.exports = React.createClass({
     var _this = this;
   	var items = this.props.tags.map(function (item, i) {
       return (
-        <Tag tag={item} key={item.id} remove={_this.props.removeTag} />
+        <Tag tag={item} key={item.id} remove={_this.props.removeTag} select={_this.props.selectTag}/>
       );
     });
 

@@ -1,5 +1,4 @@
 var React = require('react');
-var ColorSelector = require('./ColorSelector');
 var SelectOption = require('./SelectOption');
 
 
@@ -26,6 +25,7 @@ module.exports = React.createClass({
   },
 
   confirm: function() {
+    console.log("tagid", this.refs.tag.getValue().id);
     this.props.confirm({
       name: this.state.name, 
       uri: this.state.uri,

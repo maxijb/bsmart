@@ -5,13 +5,17 @@ module.exports = React.createClass({
   componentDidMount: function() {
   },
 
+  remove: function(id, event) {
+    this.props.remove(id);
+    event.preventDefault();
+  },
+
   render: function() {
-  	console.log(this.props);
   	return (
     	<div className="tag" data-id={this.props.tag.id}>
-    		<p className='name'>
+    		<p className='name' onClick={this.props.select.bind(this, this.props.tag.id)}>
     			{this.props.tag.name}
-    			<a className="remove-button" onClick={this.props.remove.bind(this, this.props.tag.id)}>X</a>
+    			<a className="remove-button" onClick={this.remove.bind(this, this.props.tag.id)}>X</a>
     		</p>
     	</div>
     );
